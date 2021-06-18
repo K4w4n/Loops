@@ -105,3 +105,9 @@ para sber somente o nome dos arquivos que foram modificados pode ser usado a seg
 ```
 git diff --name-only
 ```
+
+## Retornando para a ultima verção salva no git de um arquivo
+Utilize o comando:
+```
+git checkout HEAD -- README.md
+```
