@@ -4,7 +4,10 @@ Após a instalaçã, é necessario configurar algumas opções do seu usuario, c
 git config --global user.name"Kawan Araújo" 
 ```
 ```
-git config --global user.name "Kawan Araújo" 
+git config --global user.email "kawanaraujocontato@gmail.com" 
+```
+```
+git config --global core.editor vscode
 ```
 Primeiramente, vá para a pasta raiz do seu projeto, abra o console e digite:
 ```
