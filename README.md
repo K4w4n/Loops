@@ -51,3 +51,5 @@ Se por um acaso voce tiver duvidas sobre se os arquivos do git estão sincroniza
 git status
 ```
 O comando acima retorna um erro se houver algo de errado(como um arquivo que ainda não foi commitado por exemplo).
+
+Provavelmente voce ficará preso no console do git em algum momento ao usar o "log", para conseguir sair basta digitar r ou h.
