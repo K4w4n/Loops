@@ -44,7 +44,11 @@ Para fazer isso basta digitar o seguinte:
 ```
 git log
 ```
+ou
 
+```
+git log --oneline
+```
 Se por um acaso voce tiver duvidas sobre se os arquivos do git estão sincronizados com os seus arquivos então basta digitar:
 
 ```
@@ -65,3 +69,28 @@ Existem 3 diferentes formas de voltar em verços anteriores do projeto em caso d
 3. `git reset --hard fa9cbd992e065800f64864411fdf1dc69f6f2982`
 
     É responsavel por modificar a verção do usuario e a verção do git, não permitindo retornar a verção.
+
+O `git reset` não é indicado quando se trabalha em equipes, para esses casos o melhor é utilizar:
+
+```
+git revert fa9cbd992e065800f64864411fdf1dc69f6f2982
+``` 
+
+Esse comando pega o hash do comit especificado e fas uma cópia para o ponteiro atual, não deletando modificações anteriores.
+
+## criando uma branch
+
+Para ver uma lista de branch e a branch selecionada basta digitar:
+```
+git branch
+```
+
+Para criar uma nova branch basta digitar:
+```
+git branch "teste"
+```
+
+para mudar de branch basta udar o comando:
+```
+git checkout teste
+```
