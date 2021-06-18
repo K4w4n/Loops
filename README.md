@@ -35,4 +35,19 @@ com essa sintaxe, vc é capaz de criar commits de todos os arquivos do repositó
 ```
 git commit "README.js" -m "aqui eu atualizei informações sobre a criação de commits"
 ```
-Já a syntaxe a acima é capaz de explicar quais foram as alteraçoes feitas em arquivos individuais, adicionando uma descrição daquele commit.
+Já a sintaxe acima é capaz de explicar quais foram as alteraçoes feitas em arquivos individuais, adicionando uma descrição daquele commit.
+
+## Vizualizando históricos de commits
+
+Para fazer isso basta digitar o seguinte:
+
+```
+git log
+```
+
+Se por um acaso voce tiver duvidas sobre se os arquivos do git estão sincronizados com os seus arquivos então basta digitar:
+
+```
+git status
+```
+O comando acima retorna um erro se houver algo de errado(como um arquivo que ainda não foi commitado por exemplo).
