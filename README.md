@@ -25,3 +25,14 @@ Outra alternativa para adicionar todos os arquivos ao git seria usando a seguint
 ```
 git add --a
 ```
+
+Para que essas alterações sejam salvas é necessario enviar um commit, seguindo um dos dois modelos a baixo:
+```
+git commit -a -m "Explicando como adicionar arquivos ao git"
+```
+com essa sintaxe, vc é capaz de criar commits de todos os arquivos do repositório e adicionar uma explicação do que foi feito.
+
+```
+git commit "README.js" -m "aqui eu atualizei informações sobre a criação de commits"
+```
+Já a syntaxe a acima é capaz de explicar quais foram as alteraçoes feitas em arquivos individuais, adicionando uma descrição daquele commit.
