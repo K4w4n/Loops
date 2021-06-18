@@ -53,3 +53,15 @@ git status
 O comando acima retorna um erro se houver algo de errado(como um arquivo que ainda não foi commitado por exemplo).
 
 Provavelmente voce ficará preso no console do git em algum momento ao usar o "log", para conseguir sair basta digitar r ou q no console.
+
+Existem 3 diferentes formas de voltar em verços anteriores do projeto em caso de erro:
+
+1. `git reset --soft fa9cbd992e065800f64864411fdf1dc69f6f2982`
+
+    É o responsavel por voltar a verção do repositório de acordo com o commit feito, mas a verção do repositório na maquina do usuario não é alterada. 
+2. `git reset --mixed fa9cbd992e065800f64864411fdf1dc69f6f2982`
+
+    É responsavel por modificar a verção tanto no git como na maquina do usuario
+3. `git reset --hard fa9cbd992e065800f64864411fdf1dc69f6f2982`
+
+    É responsavel por modificar a verção do usuario e a verção do git, não permitindo retornar a verção.
