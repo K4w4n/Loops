@@ -1,0 +1,107 @@
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans+Condensed:wght@300;700&display=swap');
+#box,
+body,
+html {
+    display: flex;
+    width: 100%;
+    height: 100%;
+    margin: 0;
+    padding: 0;
+    border: 0;
+    font-family: 'Open Sans Condensed', sans-serif;
+    font-size: 1.1em;
+}
+
+* {
+    border: 0;
+    border-style: solid;
+}
+
+body {
+    align-items: center;
+    justify-content: center;
+    background-image: radial-gradient(rgb(100, 98, 98), rgb(100, 98, 98));
+}
+
+#box {
+    z-index: 0;
+    padding: 2% 2% 2% 2%;
+    height: auto;
+    flex-direction: column;
+    justify-content: center;
+    background: rgba(241, 179, 44, 0.788);
+}
+
+h1 {
+    font-weight: bolder;
+    text-align: center;
+}
+
+input[type="button"] {
+    background-color: rgba(16, 209, 16, 0.40);
+    padding: 6px 6px 6px 6px;
+    font-size: 1.1em;
+}
+
+label {
+    font-size: 1.05em;
+}
+
+input[type="button"]:hover {
+    transform: scale(1.08);
+}
+
+input[type="button"]:active {
+    background-color: rgba(16, 209, 16, 0.75);
+}
+
+#janela {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    
+    width: 100%;
+    height: 100%;
+    
+    position: fixed;
+    left: 0;
+    right: 0;
+    
+    z-index: 1;
+    
+    background-color: rgba(240, 230, 140, 0.89);
+    
+    overflow:auto;
+    padding: 2px;
+}
+
+.janelaAtivada {
+    visibility: visible;
+}
+
+.janelaAtivada>input[type="button"] {
+    margin: 6px;
+}
+
+input[type="number"],
+input[type="text"] {
+    min-height: 25px;
+}
+
+.janelaDesativada {
+    visibility: hidden;
+}
+
+@media (max-width: 600px) {/*Celulares*/
+    #box {
+        width: 100%;
+        height: 100%;
+    }
+}
+
+@media (min-width: 600px) {/*Pc*/
+    #box {
+        max-width: 400px;
+        box-shadow: 30px 50px 60px;
+    }
+}

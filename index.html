@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Loop</title>
+    <script src="script/index.js" DEFER></script>
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="shortcut icon" href="https://cdn.pixabay.com/photo/2017/01/23/19/18/saturn-2003582_1280.png" type="image/x-icon">
+</head>
+
+<body>
+    <div class="janelaDesativada" id="janela">
+        <div id="contentJanela"></div>
+        <input type="button" value="Ok">
+    </div>
+    <form id="box">
+        <h1>Loops</h1>
+        valor inicial:<input type="number" value="0" id="valor-inicial">Valor final:
+        <input type="number" value="10" id="valor-final"> Valor do incremento:
+        <input type="number" value="1" id="valor-incremento">
+        <label>
+            <input name="for-ou-whille" type="radio" id="For" checked><label for="For" checked>For</label>
+        <input name="for-ou-whille" type="radio" id="While"><label for="While">While</label>
+        </label>
+        <label>
+            <input name="crescente-ou-decrescente" type="radio" id="Crescente" checked><label for="Crescente">Crescente</label>
+        <input name="crescente-ou-decrescente" type="radio" id="Decrescente"><label for="Decrescente">Decrescente</label>
+        </label>
+        <label>
+            Desenhar como:
+            <input name="linha-ou-colunad" type="radio" id="formaImprecaoLinha" checked><label for="formaImprecaoLinha">Linha</label>
+        <input name="linha-ou-colunad" type="radio" id="formaImprecaoColuna"><label for="formaImprecaoColuna">Coluna</label>
+        </label>
+        <input type="button" value="Gerar" id="gerar">
+    </form>
+</body>
+
+</html>
