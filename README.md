@@ -39,4 +39,17 @@ Já a sintaxe acima é capaz de explicar quais foram as alteraçoes feitas em ar
 
 ## Vizualizando históricos de commits
 
-erro proposital
+Para fazer isso basta digitar o seguinte:
+
+```
+git log
+```
+
+Se por um acaso voce tiver duvidas sobre se os arquivos do git estão sincronizados com os seus arquivos então basta digitar:
+
+```
+git status
+```
+O comando acima retorna um erro se houver algo de errado(como um arquivo que ainda não foi commitado por exemplo).
+
+Provavelmente voce ficará preso no console do git em algum momento ao usar o "log", para conseguir sair basta digitar r ou q no console.
