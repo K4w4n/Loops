@@ -94,3 +94,14 @@ para mudar de branch basta udar o comando:
 ```
 git checkout teste
 ```
+
+para saber exatamente quais são as diferenças em um determinado arquivo no git e na sua area de trabalho é possivel usar o seguinte comando:
+```
+git diff
+```
+
+para sber somente o nome dos arquivos que foram modificados pode ser usado a seguinte sintaxe:
+
+```
+git diff --name-only
+```
